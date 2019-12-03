@@ -1,0 +1,147 @@
+<!--faficon adalah icon pada title website-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Belajar botstrap</title>
+
+  <link rel="shortcut icon" href="images/bootstrap48.png" />
+  <!--jika tidak meletakan meta pada saat membuka website lewat mobile device maka tampilannya akan seperti pada desktop  -->
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans+Condensed:300" rel="stylesheet">
+  <link rel="stylesheet" href="asset/bootstrap-4/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+  <script type="text/javascript" src="asset/bootstrap-4/dist/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="wrap-container">
+
+    <div class="container">
+      <!--TAMPILAN NAVBAR-->
+      <nav class="navbar navbar-ari navbar-expand-sm navbar-light">
+        <!--navbar adalah class yang sudah tersedia pada bootstrap, navbar-light berfungsi menghilangkan warna pada text-->
+        <!--fungsi dari navbar-expand-sm adalah jika nanti ukuran layar small maka bentuk navar akan beruh-->
+        <a href="#" class="navbar-brand">Learn Bootstrap </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menukita">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" collapse navbar-collapse " id="menukita">
+          <!--navar-collapse berfungsi seperti float right-->
+          <ul class="navbar-nav nav-li-ari  ml-auto">
+            <!--jika ml-auto tidak di buat maka navbar-collapse tidak berfungsi-->
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#">Product</a></li>
+            <li><a class="nav-link" href="#">About</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!--TAMPILAN TENGAN -->
+      <div class="row">
+        <div class="col-md-12 home-ari text-center text-white">
+          <!-- text center berfungsi memindahkan text di tengah tengah-->
+          <h1><b>ARI</b> Belajar botstrap </h1>
+          <h4>Belajar bootstrap sangat mengasikan dan menyenangkan </h4>
+          <div class="row-padding">
+            <a href="#" class="btn">EXPLORE TEMPLATE </a>
+          </div>
+
+        </div>
+        <div class="col-md-12 text-center">
+          <div class="showcase d-none d-md-block">
+            <!--d-none berfungsi untuk menghilakan gambar didalam showcase, d-md-block artinya jika ukurab layar decktop maka gamabar akan muncul kembali-->
+            <!--jika hanya menggunkan d-none maka gamabar akan hilang pada ukuran mobile dan desktop-->
+            <img src="images/desk.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-none d-md-block">
+        <div class="col-md-8 offset-md-2 text-center row-padding">
+          <!-- fungsi dari ofset-md-2 memberikan jarak tulisan-->
+          <h5 class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris turpis libero, laoreet nec
+            augue et, dignissim elementum libero. fermentum.</h5>
+          <h6 class="penulis text-muted">Ari adalah programer web Developers</h6>
+          <!--text muted berfungsi untun membuat tilisan memudar-->
+        </div>
+      </div>
+
+      <div class="row border-line">
+        <div class="col-md-12">
+          <div class="card card-floating">
+            <div class="card-body card-padding d-md-flex align-items-center">
+              <div>
+                <h5 class="card-title no-margin"> Belajar programing dengan menggunkan studi kasus </h5>
+                <p class="no-margin text-muted"> Mari kita membangun website yang memiliki tampilan yang indah </p>
+              </div>
+              <div class="ml-auto">
+                <a href="#" class="btn"> Belajar Sekarang </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="row row-padding d-flex align-items-center">
+        <div class="col-md-5 order-2 order-md-1">
+          <!-- jadi fungsi order adalah memindahkan posisi pada saat mobile device -->
+          <!--fungsi dari order-md-1 adalah pada saat website ukuran desktop maka posisi akan teturut kembali-->
+          <h3 class="clean-code">Mulailah !!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis quam faucibus, ullamcorper neque sit
+            amet, sollicitudin ex. Aenean viverra elit condimentum rutrum iaculis. Nulla a pharetra lorem. Integer
+            viverra lectus lacus, eu volutpat sapien imperdiet non. Aliquam luctus nisi vitae convallis egestas. Etiam
+            ut ornare lacus. Phasellus et lacus ex.</p>
+          <a href="#" class="btn">View Template </a>
+        </div>
+        <div class="col-md-6 offset-md-1 order-1 order-md-2">
+          <!-- jadi fungsi order adalah memindahkan posisi pada saat mobile device -->
+          <img src="images/front-end-template.png">
+        </div>
+      </section>
+
+      <!--TAMPILAN PADA FOOTER1-->
+
+      <section class="row row-padding text-center row-divider">
+        <div class="col-md-6 offset-md-3 head-section">
+          <h3>Technologies We Use</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis quam faucibus, ullamcorper neque sit
+            amet. Nulla a pharetra lorem. Integer viverra lectus lacus.</p>
+        </div>
+        <div class="col-md-4 teknologi">
+          <img src="images/html5.png" alt="html">
+          <h5>HTML 5</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis quam faucibus, ullamcorper neque sit
+            amet.</p>
+        </div>
+        <div class="col-md-4 teknologi">
+          <img src="images/css3.png" alt="css3">
+          <h5>CSS 3</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis quam faucibus, ullamcorper neque sit
+            amet.</p>
+        </div>
+        <div class="col-md-4 teknologi">
+          <img src="images/bootstrap.png" alt="bootstrap">
+          <h5>Bootstrap</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis quam faucibus, ullamcorper neque sit
+            amet.</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
